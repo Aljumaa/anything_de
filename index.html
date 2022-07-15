@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aljumaa</title>
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar bg-light mb-2 mb-md-5" id="nav">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="./img/logo.png" alt="" width="150" height="auto">
+            </a>
+            <p class="fs-1 text-danger">Ohne Namen</p>
+        </div>
+    </nav>
+    <div class="container text-center">
+        <div class="row">
+
+            <div id="namespieler" class="fs-1 text-secondary mb-5"></div>
+            <div class="container e">
+                <p class="col-12 fs-1 mb-2 mb-xl-5 mb-4">Niveau aussuchen</p>
+                <button type="button" class="col-7 col-md-2 btn btn-outline-primary mb-3" id="hundert" onclick="hundert()"> 100 </button>
+                <button type="button" class="col-7 col-md-2 btn btn-outline-success mx-3 mb-3" id="tausend" onclick="tausend()"> 1000 </button>
+                <button type="button" class="col-7 col-md-2 btn btn-outline-warning mb-3" id="zehntausend" onclick="zehnTausend()"> 10000 </button>
+            </div>
+
+            <div class="container mb-3">
+                <div class=" col-lg-4 a mb-5">
+                    <div class="input-group">
+                        <input autofocus maxlength="5" id="raten" type="text" class="form-control ergebnis text-capitalize a" placeholder="Nummer eingeben">
+                        <button type="button" class="btn btn-outline-primary px-3" id="disbutten" onclick="ergebnis()">Ergebnis</button>
+                    </div>
+                </div>
+                <div id="ms" class=" "></div>
+                <div id="foto"></div>
+                <button class="btn btn-dark mx-3 px-4 mt-1" type="button" id="neuspiel" onclick="neuSpiel()">Neu Spiel </button>
+                <button class="btn btn-secondary px-4 mt-1" type="button" id="weiterspielen" onclick="weiterSpielen()">  Weiter Spielen </button>
+            </div>
+        </div>
+        <div class="fs-4 mb-5 " id="versuche"></div>
+        <div class="offset-lg-4 col-lg-4 pb-5">
+            <div class="input-group mb-3">
+                <input autofocus maxlength="24" id="name" type="text" class="form-control speichern text-capitalize" placeholder="Bitte Ihren Namen eingeben" pattern="[A-Za-z]">
+                <button id="speicher" class="btn btn-outline-danger px-3" type="submit" onclick="speichern()">Los geht</button>
+            </div>
+        </div>
+
+
+        <footer class=" bg-light mt-5 ">
+            <div class="container text-center pt-2 pb-3 pt-xl-4 pb-xl-5">
+                <div class="fs-5">Created By <span class="text-danger">Aljumaa</span> © 2022</div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

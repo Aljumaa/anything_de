@@ -1,0 +1,56 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --section-color: #eff7fa;
+    --yellow-color: #ffc400;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.e {
+    display: none;
+}
+
+.a {
+    display: none;
+}
+
+#neuspiel {
+    display: none;
+}
+
+#weiterspielen {
+    display: none;
+}
+
+#versuche {
+    text-align: center;
+}
+
+
+/* Bootstrap */
+
+
+/* Namen Eingeben */
+
+.speichern:focus,
+.speichern:hover {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 .25rem #dc3545;
+}
+
+.ergebnis:focus,
+.ergebnis:hover {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 .25rem #0d6efd;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
