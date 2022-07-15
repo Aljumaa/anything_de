@@ -176,7 +176,7 @@ function speichern() {
 }
 
 function nameSpieler() {
-    document.getElementById("namespieler").innerHTML = "<span class='text-dark'>" + name + "</span> Viel Spaß!";
+    document.getElementById("namespieler").innerHTML = "<span class='text-dark'>Viel Spaß </span>" + name + "!";
 }
 
 var input = document.getElementById("name");
